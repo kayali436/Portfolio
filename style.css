@@ -56,6 +56,10 @@ section p {
   max-width: 55ch;
 }
 
+*{
+  padding: 0px;
+  margin: 0px;
+}
 /* main {
   display: grid;
   grid-template-areas:
