@@ -1,7 +1,7 @@
 /* Design tokens */
 :root {
-  --paper: hsla(190, 81%, 59%, 0.99);
-  --ink: hsla(240, 5%, 4%, 0.95);
+  --paper: hsla(191, 44%, 92%, 0.99);
+  --ink: hsla(240, 90%, 62%, 0.95);
   --brand: hsla(201, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
@@ -50,30 +50,49 @@ nav ul {
   gap: var(--gap);
 }
 
+
 /* Text readability */
 section p {
   line-height: 1.5;
   max-width: 55ch;
+  margin-bottom: 2rem;
 }
 
 *{
   padding: 0px;
   margin: 0px;
 }
-/* main {
+
+.cards {
   display: grid;
-  grid-template-areas:
-    "head head head"
-    "side content content"
-    "foot foot foot";
-    grid-template-rows: 30px auto 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.cards .card {
+  position: relative;
+  display: flex;
+  transition: all 1s ease-in-out;
 }
 
-header { grid-area: head;}
-article{grid-area: content;}
-header { grid-area: side;}
-article{grid-area: foot;} */
+.cards .card:hover {
+  transform: rotate3d(0, 1, 0.5, 1turn);
+  position: relative;
+  z-index: 10;
+}
 
+.cards .card img {
+  width: 80%;
+}
 
+.cards .card span {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  background: rgba(180, 159, 182, 0.8);
+  text-align: center;
+  color: #0c0c0b;
+  font-size: 1rem;
+}
 
 

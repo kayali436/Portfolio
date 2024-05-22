@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
     <meta name="description" content="The technical portfolio of Karam Ali" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- suppress FOUC-->
+   
     <style>
       html {
         animation: fade-in 1s;
@@ -34,6 +34,7 @@
     />
   </head>
   <body>
+
     <header>
       <h1>Karam Ai</h1>
       <nav>
@@ -44,6 +45,7 @@
         </ul>
       </nav>
     </header>
+
     <main tabindex="0">
       <section id="about">
         <header><h2>About Me</h2></header>
@@ -62,21 +64,36 @@
           user-centric web experiences.
         </p>
       </section>
+
       <section id="projects">
         <header><h2>Projects Showcase</h2></header>
         <p>
-          This is a project I made using a sketch wire frame provided from
-          CodeYourFuture to build a web page similar to the sketch.
+          Here are some of the projects, that I have done during 
+          my training with CYF so far, you can also explore my Github and Netlify for more projects.
         </p>
+        <div class="cards">
+          <a class="card" href="https://mellifluous-valkyrie-e79f6c.netlify.app/" target="_blank">
+            <img alt="Karma Project Image" src="images/Screenshot 2024-05-22 at 17.29.47.png">
+            <span>Karma Project</span>
+          </a>
+          <a class="card" href="https://glowing-frangipane-e86d5e.netlify.app/" target="_blank">
+          <img alt="Bikes for Refugees" src="images/Screenshot 2024-05-22 at 18.03.03.png">
+          <span>Bikes for Refugees</span>
       </section>
+
       <section id="contact">
         <header><h2>Contact me</h2></header>
         <p>
-          <!-- comment for the paragraph -->
           Thank you for the time that you took to view my Portfolio. I hope it
-          was worth it. if anything please feel free to leave a comment or
+          was worth it. Please feel free to leave a comment or
           contact me in any of the contact list below.
         </p>
+        <ul>
+          <li><a id="profile-link" target="_blank" href="https://github.com/kayali436"><i class="github"></i>Github</a></li>
+          <li><a target="_blank"
+              href=""><i class="Netlify"></i> Netlify</a></li>
+           <li><a href="mailto:karam780@live.co.uk"><i class="Gmail"></i> Gmail</a></li>
+        </ul>
       </section>
     </main>
 
