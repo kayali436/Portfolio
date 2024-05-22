@@ -1,8 +1,8 @@
 /* Design tokens */
 :root {
-  --paper: hsla(251, 28%, 88%, 0.99);
-  --ink: hsla(244, 16%, 17%, 0.95);
-  --brand: hsla(0, 79%, 63%, 0.9);
+  --paper: hsla(191, 44%, 92%, 0.99);
+  --ink: hsla(240, 90%, 62%, 0.95);
+  --brand: hsla(201, 79%, 63%, 0.9);
   --font: "Raleway", system-ui, sans-serif;
   --gap: 20px;
   --container: clamp(280px, calc(100vw - calc(var(--gap) * 2)), 1180px);
@@ -50,8 +50,49 @@ nav ul {
   gap: var(--gap);
 }
 
+
 /* Text readability */
 section p {
   line-height: 1.5;
   max-width: 55ch;
+  margin-bottom: 2rem;
 }
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.cards .card {
+  position: relative;
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+
+.cards .card:hover {
+  transform: rotate3d(0, 1, 0.5, 1turn);
+  position: relative;
+  z-index: 10;
+}
+
+.cards .card img {
+  width: 80%;
+}
+
+.cards .card span {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  background: rgba(180, 159, 182, 0.8);
+  text-align: center;
+  color: #0c0c0b;
+  font-size: 1rem;
+}
+
+
